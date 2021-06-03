@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat Roulette_schedule | grep -i $1 $2

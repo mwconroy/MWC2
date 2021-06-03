@@ -1,0 +1,11 @@
+---                                                                              
+  
+  - name: Sample of Copy Command                                                 
+    hosts: ELK2              
+    become: yes                   
+    tasks:                                                   
+ 
+  - name: Drop this file to remote server            
+    copy:         
+       src: /etc/ansible/scripts/copysample.sh                                      
+       dest: /home/RedAdmin/copysample.sh
